@@ -1,0 +1,34 @@
+extends layout
+block content
+ center
+  p Thank you 
+  p Your Car Details is:-
+  table(id='t2' border='0' cellpadding='5px')
+    tr
+      td Brand
+      td
+        select(name='make_name' id='make' required )
+                option(value="") Select Make
+                each make, id in results.firstlist
+                  option(value="#{make.make_id}") #{make.make_name} 
+                   // #{results.firstlist[0].make_name}
+          
+    tr
+      td Model
+      td #{results.seclist[0].model_name}
+    tr
+      td Version
+      td #{results.thirdlist[0].variant_name}
+
+    tr 
+      td Milage
+      td #{docs[0].milage}
+    tr
+      td year
+      td #{results.fourlist[0].year}
+    tr
+      td Price
+      td #{docs[0].price}
+  p Would you like to book an appointment and sell to us.
+  form(action='index4/#{id}' method='post')
+    input(type='submit' value='Next' id='button')

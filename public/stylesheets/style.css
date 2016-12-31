@@ -1,0 +1,85 @@
+body {
+  padding:none;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #005200;
+  text-decoration: none;
+}
+input {
+	width:250px;
+	height:30px;
+	background-color:none;
+	font-size: 18px;
+
+}
+div{
+	border:1px solid black; 
+	width:45%; 
+	height: 100%;
+	padding:10px;
+}
+#button{
+
+	height:45px; 
+	width:250px;
+	padding: 6px 8px;
+	background-color: #33CC33;//#0099FF;
+	color: #fff;
+	border-radius: 4px; 
+	border:1px solid;
+	font-weight:bold;
+	font-size: 18px
+}
+#button:hover {
+	text-decoration: none;
+	background: white;
+	/*color: #fff;*/
+	/*border:#33CC33;*/
+	color:#33CC33;
+	border-color:#33CC33;
+}
+select {
+	width:250px;
+	height:35px;
+	background-color:#EBFFEB;
+	border-color:#A3CCA3;
+	font-size: 18px;
+	color: #006B00
+}
+select:hover {
+	border-color:#003300;
+
+}
+#t1{
+	width:50%; 
+	padding:1px;
+	background-color: #33CC33;
+	border-color:white;
+	border-radius:10px;
+	box-shadow: 5px 5px 5px black;
+	color: 
+}
+#t2{
+	border-collapse: collapse;
+	height: 200px;
+	width: 400px;
+	box-shadow: 2px 2px 2px black
+}
+#div1{
+	border:0px solid black; 
+	width:50%; 
+	padding:10px;
+	/*background-image: url("../images/pixar cars animation 1440x900 wallpaper_www.miscellaneoushi.com_100.jpg");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header{
+	font-family: Impact;
+}
+#t2 td{
+	border-color: black;
+	border-right: 0;
+	border-collapse: collapse;box-shadow: 2px 2px 2px black
+}

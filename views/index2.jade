@@ -1,0 +1,39 @@
+extends layout
+block content
+ form(action='index3/#{name}' method='post')
+    center
+      div(id='div1')
+        h3 Enter Email
+        table
+              
+          tr
+            td Milage
+          tr
+            td
+              select(name='milage' id='milage'  required)
+                option(value='' disabled selected="selected") Select Milage
+                option(value='<10') <10
+                option(value='>10') >10
+          tr
+            td Range
+          tr
+            td
+              select(name='range' id='range' required)
+                option(value='' disabled selected="selected") Select Range
+                option(value='<50,000') <50,000
+                option(value='50,000-1,00,000') 50,000-1,00,000
+                option(value='1,00,000-5,00,000') 1,00,000-5,00,000
+                option(value='5,00,000-10,00,000') 5,00,000-10,00,000
+                option(value='>10,00,000') >10,00,000
+
+
+          tr
+            td Your Email
+          tr
+            td
+              input(type='email' name='email')
+          
+          tr
+            
+            td
+              input(type='submit' value: Done id='button')

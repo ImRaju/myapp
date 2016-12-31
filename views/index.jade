@@ -1,0 +1,52 @@
+extends layout
+block content
+  form(action='index2' method='post')
+   center
+    div(id='div1')
+     center
+        h3 Enter Your Car Detail
+        table
+          tr
+            td Select Make
+          tr
+            td
+              select(name='make_name' id='make' required )
+                option(value="") Select Make
+                each make, id in results.firstlist
+                  option(value="#{make.make_id}") #{make.make_name}
+          tr
+            td
+            td
+          tr
+            td Select Model
+          tr
+            td
+              //-var i=13;
+              select(name='model_name' id='model' required)
+                  //if model.make_id==i
+                  //each model, id in creators
+                  option(value="") Select Model
+          tr
+    
+          tr
+            td Select Varient
+          tr
+            td
+              select(id ='variant' name='variant_name' required)
+                option(value='1') Select Variant
+          tr
+            td Select MakeYear
+          tr
+            td
+              select(id ='makeyear' name='makeyear' required)
+                option(value='1') Select MakeYear
+                
+           tr
+            td
+            td
+           tr
+            td 
+              input(type='submit' value: Done id='button')
+block script
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  script(src='/javascripts/dropdown.js')
